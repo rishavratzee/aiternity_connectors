@@ -41,7 +41,7 @@ from danswer.utils.logger import setup_logger
 logger = setup_logger()
 
 
-admin_router = APIRouter(prefix="/admin/persona")
+admin_router = APIRouter(prefix="/connectors/persona")
 basic_router = APIRouter(prefix="/persona")
 
 

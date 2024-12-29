@@ -31,7 +31,7 @@ from danswer.utils.threadpool_concurrency import run_functions_tuples_in_paralle
 logger = setup_logger()
 
 
-admin_router = APIRouter(prefix="/admin/llm")
+admin_router = APIRouter(prefix="/connectors/llm")
 basic_router = APIRouter(prefix="/llm")
 
 
