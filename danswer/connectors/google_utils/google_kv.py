@@ -48,9 +48,9 @@ logger = setup_logger()
 
 def _build_frontend_google_drive_redirect(source: DocumentSource) -> str:
     if source == DocumentSource.GOOGLE_DRIVE:
-        return f"{WEB_DOMAIN}/admin/connectors/google-drive/auth/callback"
+        return f"{WEB_DOMAIN}/connectors/google-drive/auth/callback"
     elif source == DocumentSource.GMAIL:
-        return f"{WEB_DOMAIN}/admin/connectors/gmail/auth/callback"
+        return f"{WEB_DOMAIN}/connectors/gmail/auth/callback"
     else:
         raise ValueError(f"Unsupported source: {source}")
 
